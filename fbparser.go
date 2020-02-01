@@ -17,9 +17,9 @@ var (
 )
 
 func init() {
-	likeReg = regexp.MustCompile("likecount:(\\d+)")
-	shareReg = regexp.MustCompile("sharecount:(\\d+)")
-	commentReg = regexp.MustCompile("commentcount:(\\d+)")
+	likeReg = regexp.MustCompile("reaction_count:{count:(\\d+)")
+	shareReg = regexp.MustCompile("share_count:{count:(\\d+)")
+	commentReg = regexp.MustCompile("i18n_comment_count:\"(\\d+)")
 	timestampReg = regexp.MustCompile("data-utime=\"(\\d+)\"")
 }
 
